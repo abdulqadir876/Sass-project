@@ -1,0 +1,92 @@
+@media screen and (max-width: 720px){
+    .sub-about
+    {
+        width: 96%;
+        margin: auto;
+    }
+    .top-btn{
+        display: none;
+    }
+    header{
+        nav {
+            display: none;
+            position: absolute;
+            top: 0;
+            right: -300px;
+            height: 100vh;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            transition: right 0.5s;
+            background-color: crimson;
+            z-index: -1;
+            color: #ffffff;
+            // height: 100%;
+        }
+        li a{
+            font-size: 20px;
+            display: block;
+        }
+        a{
+            display: block;
+          
+        }
+        a:hover{
+              color: #000000;
+        }
+        .active{
+            right: 0;
+        }
+        
+        .logo{
+            h1{
+             display: flex;
+             justify-content: center;
+            }
+        }
+        .toggle{
+            display: block;
+            cursor: pointer;
+        }
+    }
+    .presentation{
+        display: flex;
+        flex-direction: column;
+        .image-section img{
+            width: 330px;
+        }
+        .text-about-lf{
+            margin-top: 15px;
+            h3{
+                font-size: 25px;
+            }
+            p{
+                width: 90%;
+                font-size: 14px;
+            }
+            .btn-cv{
+                margin-bottom: 15px;
+            }
+        }
+       
+        
+    }
+    // Servicess page
+    .sub-service{
+        width: 95%;
+      .col-ser{
+          width: 100%;
+          display: block;
+      }
+        h1{
+            font-size: 30px;
+        }
+        h3{
+            font-size: 19px;
+        }
+    }
+    // 
+}

@@ -1,0 +1,115 @@
+// @import "./firstMobile";
+@import "./colors";
+.toggle{
+    display: none;
+}
+.home{
+    background: $mainColor;
+}
+.sub-home{
+    width: 80%;
+    margin: auto;
+}
+header{
+    background: rgb(3, 0, 12);
+    color: #ffffff;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 1;
+    transition: 0.4s ease-in;
+    span{
+        color:$btnColor;
+    }
+}
+header.sticky{
+    color: #ffffff;
+    background: $btnColor;
+}
+header.sticky span{
+    color: rgb(3, 0, 12);
+}
+header.sticky nav a:hover{
+    color: #000000;
+}
+.js-color{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    
+}
+.logo{
+    display: flex;
+    flex: 1;
+    cursor: pointer;
+}
+nav{
+    flex: 2; 
+    display: flex;
+    justify-content: space-between;
+    a{
+        color: #ffffff;
+        text-decoration: none;
+        transition: 0.05s ease-in;
+        &:hover{
+            color: $btnColor;
+        }
+    }
+}
+.row{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%)
+}
+.text h1{
+    font-size: 50px;
+    // letter-spacing: 2px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.text h3{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+.text h2{
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.btn{
+    background: $btnColor;
+    color: #ffffff;
+    padding: 8px 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 18px;
+    transition: 0.4s ease-in;
+    &:hover{
+        border: 1px solid $btnColor;
+        background-color: transparent;
+        color: #ffffff;
+    }
+}
+
+@media screen and(max-width:1024px){
+    .text{
+        h1{
+            font-size: 45px;
+        }
+    }
+}
+@media screen and(max-width:700px){
+    .text{
+        h1{
+            font-size: 35px;
+            // background: lightblue;
+        }
+    }
+}

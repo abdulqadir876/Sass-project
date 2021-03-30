@@ -1,0 +1,39 @@
+@import './variables';
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Montserrat;
+}
+body{
+    // background: rgb(3, 0, 12);
+    color: #ffffff;
+   
+}
+.container{
+     
+      min-height: 100vh;
+}
+.top-btn{
+    width: 30px;
+    padding: 3px;
+    padding-left: 10px;
+    background: red;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-radius: 4px;
+   
+}
+.top-btn a{
+     color: #ffffff;
+     text-decoration: none;
+}
+.top-btn .fa{
+    font-size: 19px;
+    i{
+        display: flex;
+        justify-content: center;
+    }
+}
